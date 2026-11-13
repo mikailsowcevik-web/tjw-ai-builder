@@ -32,8 +32,6 @@ RUN NODE_OPTIONS=--max-old-space-size=4096 pnpm run build
 # ---- production dependencies stage ----
 FROM build AS prod-deps
 
-
-
 # ---- production stage ----
 FROM prod-deps AS bolt-ai-production
 WORKDIR /app
